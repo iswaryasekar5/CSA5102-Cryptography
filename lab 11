@@ -1,0 +1,5 @@
+#include<stdio.h>
+int main(){
+    printf("Playfair Key Space Calculation\n");
+    return 0;
+}
