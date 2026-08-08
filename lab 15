@@ -1,0 +1,5 @@
+#include<stdio.h>
+int main(){
+    printf("Frequency Attack on Additive Cipher\n");
+    return 0;
+}
