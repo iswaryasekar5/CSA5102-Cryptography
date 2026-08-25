@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int power(int a,int b,int q) {
+    int r=1;
+    while(b--) r=(r*a)%q;
+    return r;
+}
+
+int main() {
+    int a,q,x,y,A,B;
+
+    scanf("%d%d%d%d",&a,&q,&x,&y);
+
+    A=power(a,x,q);
+    B=power(a,y,q);
+
+    printf("Alice sends: %d\n",A);
+    printf("Bob sends: %d\n",B);
+    printf("Alice key: %d\n",power(B,x,q));
+    printf("Bob key: %d",power(A,y,q));
+
+    return 0;
+}
