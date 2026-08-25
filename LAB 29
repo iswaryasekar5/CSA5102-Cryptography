@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int rate=1024;
+    int capacity=1600-rate;
+
+    printf("Rate = %d bits\n",rate);
+    printf("Capacity = %d bits\n",capacity);
+    printf("Without permutation, zero lanes remain zero.");
+    return 0;
+}
