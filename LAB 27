@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int m,e,n,c;
+
+    printf("Enter plaintext value, e and n: ");
+    scanf("%d%d%d",&m,&e,&n);
+
+    c=1;
+
+    while(e--)
+        c=(c*m)%n;
+
+    printf("Ciphertext = %d",c);
+    return 0;
+}
