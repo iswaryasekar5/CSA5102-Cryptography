@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int n,m,a,b;
+
+    printf("Enter n and plaintext block: ");
+    scanf("%d%d",&n,&m);
+
+    a=n; b=m;
+
+    while(b) {
+        int t=a%b;
+        a=b;
+        b=t;
+    }
+
+    printf("gcd = %d\n",a);
+
+    if(a>1)
+        printf("A factor of n is revealed.");
+    else
+        printf("No factor is revealed.");
+
+    return 0;
+}
