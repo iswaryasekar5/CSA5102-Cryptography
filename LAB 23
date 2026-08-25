@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int p[4], c[4], key, ctr, i;
+
+    printf("Enter plaintext blocks: ");
+    for(i=0;i<4;i++) scanf("%d",&p[i]);
+
+    printf("Enter key and counter: ");
+    scanf("%d%d",&key,&ctr);
+
+    for(i=0;i<4;i++)
+        c[i]=p[i]^((key+ctr+i)&255);
+
+    printf("Cipher: ");
+    for(i=0;i<4;i++) printf("%d ",c[i]);
+
+    printf("\nDecrypted: ");
+    for(i=0;i<4;i++)
+        printf("%d ",c[i]^((key+ctr+i)&255));
+
+    return 0;
+}
