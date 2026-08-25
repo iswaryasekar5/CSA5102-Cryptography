@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    unsigned long long p,k;
+
+    printf("Enter 64-bit plaintext (hex): ");
+    scanf("%llx",&p);
+
+    printf("Enter 56-bit key (hex): ");
+    scanf("%llx",&k);
+
+    printf("Plaintext = %llX\n",p);
+    printf("Key = %llX\n",k);
+    printf("DES uses 16 Feistel rounds.");
+
+    return 0;
+}
