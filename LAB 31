@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    printf("64-bit block  : Rb = 0x1B\n");
+    printf("128-bit block : Rb = 0x87\n");
+    printf("Subkey = left shift by 1 bit.");
+    return 0;
+}
