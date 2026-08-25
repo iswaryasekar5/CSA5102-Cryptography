@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int k1,k2;
+
+    printf("Enter k for first signature: ");
+    scanf("%d",&k1);
+
+    printf("Enter k for second signature: ");
+    scanf("%d",&k2);
+
+    if(k1!=k2)
+        printf("Signatures are different.");
+    else
+        printf("Same k: signatures may be identical.");
+
+    return 0;
+}
