@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,p;
+
+    printf("Enter a b p: ");
+    scanf("%d%d%d",&a,&b,&p);
+
+    printf("C = %d",(a*p+b)%26);
+
+    return 0;
+}
