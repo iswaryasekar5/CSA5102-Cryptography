@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int x,t,m;
+
+    printf("Enter X and MAC T: ");
+    scanf("%d%d",&x,&t);
+
+    m=x^t;
+
+    printf("Second block X XOR T = %d\n",m);
+    printf("Message = X || (X XOR T)");
+
+    return 0;
+}
