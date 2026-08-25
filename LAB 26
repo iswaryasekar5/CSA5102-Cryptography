@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter old modulus n: ");
+    scanf("%d",&n);
+
+    printf("New e and d with the same n are NOT safe.\n");
+    printf("Generate a new RSA modulus n.");
+
+    return 0;
+}
