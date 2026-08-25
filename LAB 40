@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    char s[500];
+    int f[26]={0},i;
+
+    printf("Enter ciphertext: ");
+    scanf("%s",s);
+
+    for(i=0;s[i];i++)
+        if(s[i]>='A'&&s[i]<='Z')
+            f[s[i]-'A']++;
+
+    printf("Letter frequencies:\n");
+
+    for(i=0;i<26;i++)
+        if(f[i])
+            printf("%c : %d\n",'A'+i,f[i]);
+
+    printf("Frequency analysis can be used to generate likely plaintexts.");
+
+    return 0;
+}
